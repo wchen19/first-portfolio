@@ -1,0 +1,61 @@
+.about {
+  display: flex;
+  height: 80vh;
+  margin: 8rem 0;
+  padding: 0 3rem;
+}
+
+.leftAbout {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.leftAbout > :nth-child(1) {
+  color: var(--blue);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.leftAbout > :nth-child(2) {
+  color: var(--black);
+  font-weight: 400;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.8rem;
+}
+
+.leftAbout > :nth-child(3) {
+  display: flex;
+  margin-top: 2rem;
+  color: rgb(121, 121, 121);
+  font-weight: 300;
+  font-size: 18px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4rem;
+}
+
+.leftAbout button {
+  background: var(--darkBlue);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 15px 15px 10px rgba(0, 0, 0, 0.2);
+}
+
+.leftAbout button:hover {
+  background: var(--lightBlue);
+  color: var(--black);
+  box-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.2);
+}
+
+.rightAbout {
+  display: flex;
+  flex: 1;
+}
