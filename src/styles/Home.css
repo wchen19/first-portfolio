@@ -1,0 +1,107 @@
+.home {
+  display: flex;
+  height: 77vh;
+  margin-top: 6rem;
+}
+
+.leftHome {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome > :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.welcome > :nth-child(2) {
+  color: var(--blue);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.icons {
+  margin-top: 6rem;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.icons svg {
+  font-size: 3rem;
+  color: var(--blue);
+}
+
+.icons svg:hover {
+  cursor: pointer;
+}
+
+.rightHome {
+  flex: 1;
+  position: relative;
+}
+
+.rightHome > * {
+  position: absolute;
+  z-index: 1;
+}
+
+.rightHome > img {
+  transform: scale(0.55);
+  left: -38%;
+  bottom: -42%;
+}
+
+.floatingCard {
+  justify-content: space-around;
+  display: flex;
+  background: white;
+  box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  align-items: center;
+  padding: 5px 30px;
+  gap: 2rem;
+  bottom: 15%;
+  right: 50%;
+}
+
+.floatingCard > img {
+  width: 5rem;
+  transform: scale(0.8);
+}
+
+.floatingCard > span {
+  font-size: 18px;
+}
+
+.blur1 {
+  background: rgb(29, 52, 128);
+  position: absolute;
+  width: 20rem;
+  height: 10rem;
+  border-radius: 40%;
+  z-index: -9;
+  bottom: 15%;
+  left: 40%;
+  filter: blur(120px);
+}
+
+.blur2 {
+  background: rgb(29, 52, 128);
+  position: absolute;
+  width: 15rem;
+  height: 10rem;
+  border-radius: 50%;
+  z-index: -9;
+  top: 35%;
+  right: 50%;
+  filter: blur(150px);
+}
