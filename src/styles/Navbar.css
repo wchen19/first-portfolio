@@ -1,0 +1,41 @@
+.navbar {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftNav {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.name{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.rightNav{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    font-weight: 500;
+}
+
+.menuList {
+    flex: 10;
+}
+
+.menuList ul {
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+.menuList ul li:hover {
+    cursor: pointer;
+    color: var(--darkBlue);
+}
