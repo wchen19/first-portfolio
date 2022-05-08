@@ -13,7 +13,8 @@ const About = () => {
           Kampus Merdeka. I've been interested in the FrontEnd field since my
           freshman year and started pursuing this route for a year now since I
           join Dicoding's FrontEnd Web learning path. I have experience in using
-          HTML, CSS, Javascript, also ReactJS. I'm currently looking for an
+          HTML, CSS, Javascript, and ReactJS, also experienced in designing with
+          Adobe Illustrator and Adobe Photoshop. I'm currently looking for an
           internship for FrontEnd developer, to know more about me
         </span>
         <span>
@@ -24,7 +25,44 @@ const About = () => {
         </span>
       </div>
       <div className='rightAbout'>
-        <div className='skills'></div>
+        <div className='skills'>
+          <div className='container'>
+            <div className='bar html'>
+              <span>HTML</span>
+              <span>90%</span>
+            </div>
+          </div>
+          <div className='container'>
+            <div className='bar css'>
+              <span>CSS</span>
+              <span>82%</span>
+            </div>
+          </div>
+          <div className='container'>
+            <div className='bar js'>
+              <span>JS</span>
+              <span>88%</span>
+            </div>
+          </div>
+          <div className='container'>
+            <div className='bar react'>
+              <span>ReactJS</span>
+              <span>85%</span>
+            </div>
+          </div>
+          <div className='container'>
+            <div className='bar illustrator'>
+              <span>Adobe Illustrator</span>
+              <span>90%</span>
+            </div>
+          </div>
+          <div className='container'>
+            <div className='bar photoshop'>
+              <span>Adobe Photoshop</span>
+              <span>80%</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

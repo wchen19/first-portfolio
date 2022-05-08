@@ -25,6 +25,7 @@
   font-size: 18px;
   text-align: justify;
   line-height: 1.8rem;
+  width: 97%;
 }
 
 .leftAbout > :nth-child(3) {
@@ -50,12 +51,71 @@
 }
 
 .leftAbout button:hover {
-  background: var(--lightBlue);
-  color: var(--black);
+  background: var(--blue);
+  color: var(--darkBlue);
   box-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.2);
 }
 
 .rightAbout {
   display: flex;
   flex: 1;
+  margin-left: 4rem;
+}
+
+.skills {
+  width: 100%;
+}
+
+.container {
+  margin-top: 2.5rem;
+  width: 100%;
+  border-radius: 50px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), inset 5px 5px 5px #bfc3cb,
+    inset -5px -5px 5px #ffffff;
+}
+
+.container:hover {
+  box-shadow: inset 5px 5px 5px #bfc3cb, inset -5px -5px 5px #ffffff;
+}
+
+.bar {
+  padding: 10px 15px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  background: var(--blue);
+}
+
+.bar:hover {
+  background: var(--darkBlue);
+}
+
+.html {
+  width: 90%;
+  border-radius: 50px;
+}
+
+.css {
+  width: 82%;
+  border-radius: 50px;
+}
+
+.js {
+  width: 88%;
+  border-radius: 50px;
+}
+
+.react {
+  width: 85%;
+  border-radius: 50px;
+}
+
+.illustrator {
+  width: 90%;
+  border-radius: 50px;
+}
+
+.photoshop {
+  width: 80%;
+  border-radius: 50px;
 }

@@ -1,16 +1,15 @@
-:root
-{
-  --lightBlue: #86BEDA;
-  --blue: #006DB2;
+:root {
+  --lighterBlue: #86beda;
+  --lightBlue: #4e97d1;
+  --blue: #006db2;
   --darkBlue: #004987;
-    --black : #242D49;
-    --gray : #788097;
-    --blueCard : #DDF8FE;
+  --black: #242d49;
+  --gray: #788097;
+  --blueCard: #ddf8fe;
 }
 
-.App{
-    padding: 0.5rem 3.5rem;
-    overflow: hidden;
-    color: var(--black);    
+.App {
+  padding: 0.5rem 3.5rem;
+  overflow: hidden;
+  color: var(--black);
 }
-  
