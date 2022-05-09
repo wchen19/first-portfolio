@@ -1,41 +1,48 @@
 .navbar {
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  position: sticky;
 }
 
 .leftNav {
-    flex: 1;
-    align-items: center;
-    display: flex;
-    gap: 2rem;
+  flex: 1;
+  align-items: center;
+  display: flex;
+  gap: 2rem;
 }
 
-.name{
-    font-size: 1.3rem;
-    font-weight: bold;
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.rightNav{
-    display: flex;
-    flex: 1;
-    align-items: center;
-    font-weight: 500;
+.rightNav {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  font-weight: 500;
 }
 
 .menuList {
-    flex: 10;
+  flex: 10;
 }
 
 .menuList ul {
-    display: flex;
-    gap: 2rem;
-    margin-right: 4rem;
-    list-style-type: none;
-    justify-content: flex-end;
+  display: flex;
+  gap: 2rem;
+  margin-right: 4rem;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+
+.menuList ul li {
+  transition: all 300ms ease;
 }
 
 .menuList ul li:hover {
-    cursor: pointer;
-    color: var(--darkBlue);
+  cursor: pointer;
+  color: var(--darkBlue);
+  font-weight: bold;
 }

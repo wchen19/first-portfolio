@@ -40,7 +40,7 @@
 }
 
 .leftAbout button {
-  background: var(--darkBlue);
+  background: var(--blue);
   color: white;
   font-weight: bold;
   font-size: 1rem;
@@ -48,11 +48,13 @@
   border: none;
   border-radius: 20px;
   box-shadow: 0px 15px 15px 10px rgba(0, 0, 0, 0.2);
+
+  transition: transform 100ms ease;
 }
 
 .leftAbout button:hover {
-  background: var(--blue);
-  color: var(--darkBlue);
+  background: var(--darkBlue);
+  transform: scale(1.05);
   box-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -72,10 +74,13 @@
   border-radius: 50px;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), inset 5px 5px 5px #bfc3cb,
     inset -5px -5px 5px #ffffff;
+
+  transition: all 200ms ease;
 }
 
 .container:hover {
   box-shadow: inset 5px 5px 5px #bfc3cb, inset -5px -5px 5px #ffffff;
+  transform: scale(1.05);
 }
 
 .bar {

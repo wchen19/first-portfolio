@@ -4,10 +4,10 @@
   border-radius: 15px;
   overflow: hidden;
 
-  transition: all 100ms ease-in;
+  transition: all 100ms ease;
 }
 
-img {
+.card img {
   width: 25rem;
 }
 
@@ -22,8 +22,9 @@ img {
   height: 100%;
   top: 0;
   transform: translateY(-100%);
+  opacity: 0;
 
-  transition: transform 500ms ease-out;
+  transition: all 700ms ease;
 }
 
 .card:hover {
@@ -33,6 +34,7 @@ img {
 
 .card:hover .card-content {
   transform: translateY(0);
+  opacity: 1;
 }
 
 h2 {
@@ -57,11 +59,11 @@ button {
   border-radius: 15px;
   border: none;
 
-  transition: transform 100ms ease-in;
+  transition: transform 100ms ease;
 }
 
 button:hover {
   background: var(--darkBlue);
-  /* color: var(--blue); */
+  cursor: pointer;
   transform: scale(1.05);
 }

@@ -38,10 +38,14 @@
 .icons svg {
   font-size: 3rem;
   color: var(--blue);
+
+  transition: transform 100ms ease;
 }
 
 .icons svg:hover {
   cursor: pointer;
+  color: var(--darkBlue);
+  transform: scale(1.1);
 }
 
 .rightHome {
@@ -58,6 +62,12 @@
   transform: scale(0.55);
   left: -38%;
   bottom: -42%;
+
+  transition: transform 500ms ease;
+}
+
+.rightHome > img:hover {
+  transform: scale(0.6);
 }
 
 .floatingCard {
@@ -71,6 +81,8 @@
   gap: 2rem;
   bottom: 15%;
   right: 50%;
+
+  transition: transform 500ms ease;
 }
 
 .floatingCard > img {
@@ -80,6 +92,10 @@
 
 .floatingCard > span {
   font-size: 18px;
+}
+
+.floatingCard:hover {
+  transform: scale(1.05);
 }
 
 .blur1 {
