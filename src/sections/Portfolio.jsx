@@ -1,12 +1,8 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import MarvelWeb from '../assets/marvel-web.png';
-import BookshelfApp from '../assets/bookshelf-app.png';
-import MealRecipe from '../assets/meal-recipe-app.png';
-import MovieCatalogue from '../assets/movie-catalogue.png';
-import RestaurantApps from '../assets/restaurant-apps.png';
-import FriedRice from '../assets/fried-rice-restaurant.png';
-import MovieLibrary from '../assets/movie-library.png';
+import ImageSlide from '../components/ImageSlide';
+import WebPortfolio from '../helpers/WebPortfolio';
+import WebDicoding from '../helpers/WebDicoding';
 import '../styles/Portfolio.css';
 import 'swiper/css';
 
@@ -21,12 +17,18 @@ const Portfolio = () => {
         grabCursor={true}
         className='portfolio-slider'
       >
-        <SwiperSlide>
-          <img src={FriedRice} alt='Fried Rice Restaurant Website' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={MovieLibrary} alt='Movie Library Website' />
-        </SwiperSlide>
+        {WebPortfolio.map((item, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <ImageSlide
+                image={item.image}
+                name={item.name}
+                githubLink={item.githubLink}
+                webLink={item.webLink}
+              />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
       <span>Dicoding's Course Project Websites</span>
       <Swiper
@@ -35,21 +37,18 @@ const Portfolio = () => {
         grabCursor={true}
         className='portfolio-slider'
       >
-        <SwiperSlide>
-          <img src={MarvelWeb} alt='Marvel Character Information Website' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={BookshelfApp} alt='Bookshelf App Website' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={MealRecipe} alt='Meal Recipe App Website' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={MovieCatalogue} alt='Movie Catalogue Website' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={RestaurantApps} alt='Restaurant Apps Website' />
-        </SwiperSlide>
+        {WebDicoding.map((item, key) => {
+          return (
+            <SwiperSlide key={key}>
+              <ImageSlide
+                image={item.image}
+                name={item.name}
+                githubLink={item.githubLink}
+                webLink={item.webLink}
+              />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </div>
   );
