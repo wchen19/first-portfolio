@@ -1,6 +1,5 @@
 .contact-container {
   display: flex;
-  /* height: 80vh; */
   padding: 5rem 2rem 2rem;
   flex-direction: column;
 }
@@ -77,4 +76,30 @@ textarea {
 .right-contact h3 {
   margin-top: 4rem;
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-container {
+    padding: 4rem 1rem 1rem;
+  }
+
+  .contact-form {
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  .left-contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .right-contact .user {
+    width: 30rem;
+  }
+
+  .right-contact input[type='submit'] {
+    padding: 1rem 3rem;
+    margin-top: 1.5rem;
+  }
 }

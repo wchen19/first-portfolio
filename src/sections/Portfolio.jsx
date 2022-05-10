@@ -11,12 +11,7 @@ const Portfolio = () => {
     <div className='portfolio' id='Portfolio'>
       <span>Recent Projects</span>
       <span>Portfolio Websites</span>
-      <Swiper
-        spaceBetween={70}
-        slidesPerView={3}
-        grabCursor={true}
-        className='portfolio-slider'
-      >
+      <Swiper slidesPerView={2} grabCursor={true} className='portfolio-slider'>
         {WebPortfolio.map((item, index) => {
           return (
             <SwiperSlide key={index}>
@@ -31,12 +26,7 @@ const Portfolio = () => {
         })}
       </Swiper>
       <span>Dicoding's Course Project Websites</span>
-      <Swiper
-        spaceBetween={70}
-        slidesPerView={3}
-        grabCursor={true}
-        className='portfolio-slider'
-      >
+      <Swiper slidesPerView={2} grabCursor={true} className='portfolio-slider'>
         {WebDicoding.map((item, key) => {
           return (
             <SwiperSlide key={key}>

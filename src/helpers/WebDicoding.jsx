@@ -6,7 +6,7 @@ import RestaurantApps from '../assets/restaurant-apps.png';
 
 const webDicoding = [
   {
-    name: 'Marvel Character Information Website',
+    name: 'Marvel Character Website',
     image: MarvelWeb,
     githubLink: 'https://github.com/wchen19/marvel-character-info-web',
     webLink: 'https://zesty-hotteok-48421f.netlify.app/',

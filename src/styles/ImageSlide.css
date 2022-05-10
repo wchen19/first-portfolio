@@ -67,3 +67,30 @@ button:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
+
+@media screen and (max-width: 800px) {
+  .card {
+    /* overflow: visible; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-content {
+    background: white;
+    opacity: 1;
+    position: relative;
+    padding: 0.5rem 0 2rem;
+    transition: none !important;
+    transform: none !important;
+  }
+
+  h2 {
+    width: 90%;
+    font-size: 22px;
+    margin-bottom: 2rem;
+  }
+
+  .card img {
+    width: 22rem;
+  }
+}

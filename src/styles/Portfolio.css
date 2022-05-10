@@ -35,3 +35,13 @@
   cursor: grab;
   filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
 }
+
+@media screen and (max-width: 800px) {
+  .portfolio {
+    padding: 0 2rem;
+  }
+
+  .portfolio span:nth-of-type(3) {
+    text-align: center;
+  }
+}

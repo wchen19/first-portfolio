@@ -36,3 +36,9 @@
 .contact-card a:hover {
   font-weight: bold;
 }
+
+@media screen and (max-width: 800px) {
+  .contact-card {
+    width: 50%;
+  }
+}

@@ -123,3 +123,23 @@
   width: 80%;
   border-radius: 50px;
 }
+
+@media screen and (max-width: 800px) {
+  .about {
+    flex-direction: column;
+    height: 70rem;
+    padding: 1rem 2rem;
+  }
+
+  .leftAbout > :nth-child(1) {
+    text-align: center;
+  }
+
+  .leftAbout > :nth-child(3) {
+    justify-content: center;
+  }
+
+  .rightAbout {
+    margin-left: 0;
+  }
+}

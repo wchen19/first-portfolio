@@ -13,3 +13,9 @@
   overflow: hidden;
   color: var(--black);
 }
+
+@media screen and (max-width: 800px) {
+  .App {
+    padding: 0.5rem 2rem;
+  }
+}
