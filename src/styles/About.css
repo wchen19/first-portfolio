@@ -47,7 +47,7 @@
   padding: 20px;
   border: none;
   border-radius: 20px;
-  box-shadow: 0px 15px 15px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 10px 7px rgba(0, 0, 0, 0.2);
 
   transition: transform 100ms ease;
 }
@@ -55,7 +55,7 @@
 .leftAbout button:hover {
   background: var(--darkBlue);
   transform: scale(1.05);
-  box-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 7px 4px rgba(0, 0, 0, 0.2);
 }
 
 .rightAbout {
