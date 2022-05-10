@@ -30,22 +30,20 @@
 }
 
 .menuList {
-  flex: 10;
+  flex: 1;
   display: flex;
   justify-content: flex-end;
 }
 
 .menuList ul {
   display: flex;
-  gap: 2rem;
+  gap: 6rem;
   margin-right: 7rem;
   list-style-type: none;
-  justify-content: flex-end;
 }
 
 .menuList ul li {
   transition: all 300ms ease;
-  flex: 1;
 }
 
 .menuList ul li:hover {
