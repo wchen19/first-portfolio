@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 80vh;
-  padding: 5rem 3rem 8rem;
+  /* height: 80vh; */
+  padding: 5rem 3rem 0;
 }
 
 .portfolio span:nth-of-type(1) {
