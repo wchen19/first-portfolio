@@ -77,7 +77,10 @@ const Contact = () => {
             <textarea name='message' className='user' placeholder='Message' />
             <input type='submit' value='Send' />
           </form>
-          <h3>{done && 'Thank you for the message! I will reply you ASAP.'}</h3>
+          <h3>
+            {done &&
+              'Thank you for the message! I will reply your message ASAP.'}
+          </h3>
         </div>
       </div>
     </div>
