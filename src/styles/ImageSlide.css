@@ -1,5 +1,5 @@
 .card {
-  width: fit-content;
+  width: 25rem;
   position: relative;
   border-radius: 15px;
   overflow: hidden;
@@ -8,7 +8,7 @@
 }
 
 .card img {
-  width: 25rem;
+  width: 100%;
 }
 
 .card-content {
@@ -68,9 +68,32 @@ button:hover {
   transform: scale(1.05);
 }
 
+button:active {
+  animation: press 0.5s 1 linear;
+}
+
 @media screen and (max-width: 800px) {
   .card {
-    /* overflow: visible; */
+    width: 16rem;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .button {
+    gap: 1rem;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 25rem;
     display: flex;
     flex-direction: column;
   }
@@ -90,7 +113,17 @@ button:hover {
     margin-bottom: 2rem;
   }
 
-  .card img {
+  .button {
+    gap: 2rem;
+  }
+
+  button {
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card {
     width: 22rem;
   }
 }

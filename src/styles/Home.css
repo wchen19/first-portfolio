@@ -40,13 +40,17 @@
   font-size: 3rem;
   color: var(--blue);
 
-  transition: transform 100ms ease;
+  transition: all 100ms ease;
 }
 
 .icons svg:hover {
   cursor: pointer;
   color: var(--darkBlue);
   transform: scale(1.1);
+}
+
+.icons svg:active {
+  animation: press 0.5s 1 linear;
 }
 
 .right-home {
@@ -81,7 +85,7 @@
   padding: 5px 30px;
   gap: 2rem;
   bottom: 15%;
-  right: 50%;
+  right: 40%;
 
   transition: transform 500ms ease;
 }
@@ -123,6 +127,55 @@
   filter: blur(150px);
 }
 
+@media screen and (max-width: 1000px) {
+  .home {
+    gap: 1rem;
+  }
+
+  .left-home {
+    margin-top: 3rem;
+  }
+
+  .welcome > :nth-child(1) {
+    font-size: 3rem;
+  }
+
+  .welcome > :nth-child(2) {
+    font-size: 2rem;
+  }
+
+  .right-home > img {
+    transform: scale(0.45);
+    left: -75%;
+    bottom: -35%;
+  }
+
+  .right-home > img:hover {
+    transform: scale(0.5);
+  }
+
+  .floating-card {
+    padding: 5px 25px;
+    gap: 1.5rem;
+    bottom: 32%;
+    right: 30%;
+  }
+
+  .blur1 {
+    width: 16rem;
+    height: 8rem;
+    bottom: 25%;
+    left: 45%;
+  }
+
+  .blur2 {
+    width: 12rem;
+    height: 8rem;
+    top: 0%;
+    right: 55%;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .home {
     flex-direction: column;
@@ -135,36 +188,101 @@
     margin-top: 0;
   }
 
+  .welcome > :nth-child(1) {
+    font-size: 4rem;
+  }
+
+  .welcome > :nth-child(2) {
+    font-size: 3rem;
+  }
+
   .right-home > img {
-    transform: scale(0.45);
-    left: -28%;
-    bottom: -35%;
-  }
-
-  .right-home > img:hover {
-    transform: scale(0.5);
-  }
-
-  .floating-card {
-    padding: 5px 20px;
-    gap: 1.5rem;
-    bottom: 32%;
-    right: 40%;
+    left: -20%;
   }
 
   .blur1 {
-    width: 16rem;
-    height: 8rem;
-    bottom: 25%;
     left: 50%;
     filter: blur(80px);
   }
 
   .blur2 {
-    width: 12rem;
-    height: 8rem;
-    top: 0%;
     right: 50%;
     filter: blur(80px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .welcome > :nth-child(1) {
+    font-size: 3.5rem;
+  }
+
+  .welcome > :nth-child(2) {
+    font-size: 2.5rem;
+  }
+
+  .icons {
+    margin-top: 4rem;
+  }
+
+  .right-home > img {
+    left: -50%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .home {
+    height: 55rem;
+  }
+
+  .welcome {
+    text-align: center;
+  }
+
+  .welcome > :nth-child(1) {
+    font-size: 2.8rem;
+  }
+
+  .welcome > :nth-child(2) {
+    font-size: 1.8rem;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+  .right-home > img {
+    transform: scale(0.35);
+    left: -87%;
+  }
+
+  .right-home > img:hover {
+    transform: scale(0.4);
+  }
+
+  .floating-card {
+    padding: 5px 15px;
+    gap: 1rem;
+    bottom: 50%;
+  }
+
+  .floating-card > img {
+    width: 4rem;
+  }
+
+  .floating-card > span {
+    font-size: 14px;
+  }
+
+  .blur1 {
+    width: 12rem;
+    height: 5rem;
+    bottom: 40%;
+  }
+
+  .blur2 {
+    width: 7rem;
+    height: 5rem;
+    top: -10%;
+    right: 60%;
   }
 }

@@ -1,5 +1,6 @@
 .contact-card {
   height: 50%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,8 +38,14 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .contact-card {
-    width: 50%;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact-card {
+    width: 100%;
   }
 }

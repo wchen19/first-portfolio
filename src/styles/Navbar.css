@@ -5,7 +5,7 @@
   background-color: white;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 0;
+  padding: 0.5rem 3rem;
   position: fixed;
   top: 0;
 }
@@ -26,6 +26,7 @@
   display: flex;
   flex: 2;
   align-items: center;
+  margin-right: 7rem;
   font-weight: 500;
 }
 
@@ -38,7 +39,6 @@
 .menu-list ul {
   display: flex;
   gap: 6rem;
-  margin-right: 7rem;
   list-style-type: none;
 }
 
@@ -52,13 +52,41 @@
   font-weight: bold;
 }
 
+.menu-list ul li:active {
+  animation: press 0.5s 1 linear;
+}
+
+@media screen and (max-width: 1000px) {
+  .menu-list ul {
+    gap: 4rem;
+  }
+}
+
 @media screen and (max-width: 800px) {
+  .navbar {
+    padding: 0.5rem 2rem;
+  }
+
+  .right-nav {
+    margin-right: 5rem;
+  }
+
+  .menu-list ul {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 0.3rem 0;
+  }
+
   .left-nav {
     justify-content: center;
   }
 
   .name {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .right-nav {

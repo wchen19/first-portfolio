@@ -1,7 +1,7 @@
 .about {
   display: flex;
   height: 90vh;
-  padding: 8rem 3rem 0;
+  padding: 8rem 2rem 0;
 }
 
 .left-about {
@@ -55,6 +55,10 @@
   background: var(--darkBlue);
   transform: scale(1.05);
   box-shadow: 0px 5px 7px 4px rgba(0, 0, 0, 0.2);
+}
+
+.left-about button:active {
+  animation: press 0.5s 1 linear;
 }
 
 .right-about {
@@ -124,14 +128,45 @@
   border-radius: 50px;
 }
 
+@media screen and (max-width: 1000px) {
+  .about {
+    height: 35rem;
+    padding: 2rem 1rem 0;
+  }
+
+  .left-about > :nth-child(2) {
+    font-size: 16px;
+  }
+
+  .left-about > :nth-child(3) {
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .right-about {
+    margin-left: 2rem;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .about {
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: 70rem;
     padding: 1rem 2rem;
   }
 
+  .left-about {
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
   .left-about > :nth-child(1) {
+    text-align: center;
+  }
+
+  .left-about > :nth-child(2) {
+    font-size: 18px;
+    width: 80%;
     text-align: center;
   }
 
@@ -141,5 +176,62 @@
 
   .right-about {
     margin-left: 0;
+    justify-content: center;
+  }
+
+  .skills {
+    width: 80%;
+  }
+
+  .container {
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left-about > :nth-child(2) {
+    font-size: 18px;
+    width: 100%;
+    text-align: justify;
+  }
+
+  .left-about > :nth-child(3) {
+    width: 100%;
+  }
+
+  .left-about > :nth-child(3) > * {
+    width: 100%;
+  }
+
+  .left-about button {
+    width: 100%;
+  }
+
+  .skills {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about {
+    padding: 1rem;
+  }
+
+  .left-about {
+    margin: 2rem 0 4rem;
+  }
+
+  .left-about > :nth-child(1) {
+    font-size: 2rem;
+  }
+
+  .left-about > :nth-child(2) {
+    font-size: 16px;
+    line-height: 1.6rem;
+  }
+
+  .left-about > :nth-child(3) {
+    flex-direction: column;
   }
 }

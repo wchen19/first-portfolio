@@ -2,7 +2,6 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import ContactCard from '../components/ContactCard';
 import EmailIcon from '@mui/icons-material/Email';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import '../styles/Contact.css';
 
@@ -44,13 +43,6 @@ const Contact = () => {
             name='wilbertchen2001@gmail.com'
             link='mailto:wilbertchen2001@gmail.com'
             text='Send an email'
-          />
-          <ContactCard
-            icon={<WhatsAppIcon />}
-            type='Whatsapp'
-            name='+6289699599999'
-            link='https://api.whatsapp.com/send?phone=089699599999'
-            text='Send a message'
           />
           <ContactCard
             icon={<LinkedInIcon />}

@@ -9,8 +9,8 @@ import Portfolio from './sections/Portfolio';
 function App() {
   return (
     <>
+      <Navbar />
       <div className='App'>
-        <Navbar />
         <Home />
         <About />
         <Portfolio />

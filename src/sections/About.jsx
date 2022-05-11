@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import CV from '../assets/cv.pdf';
 import '../styles/About.css';
 
@@ -21,7 +22,10 @@ const About = () => {
           <a href={CV} download>
             <button className='cv'>Download my CV</button>
           </a>{' '}
-          or <button className='contact'>Contact Me</button>
+          or
+          <Link spy={true} to='Contact' smooth={true}>
+            <button className='contact'>Contact Me</button>
+          </Link>
         </span>
       </div>
       <div className='right-about'>
