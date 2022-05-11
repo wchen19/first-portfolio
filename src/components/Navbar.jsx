@@ -5,11 +5,11 @@ import '../styles/Navbar.css';
 const Navbar = () => {
   return (
     <div className='navbar'>
-      <div className='leftNav'>
+      <div className='left-nav'>
         <div className='name'>Wilbert Chen</div>
       </div>
-      <div className='rightNav'>
-        <div className='menuList'>
+      <div className='right-nav'>
+        <div className='menu-list'>
           <ul>
             <Link spy={true} to='Home' smooth={true} activeClass='activeClass'>
               <li>Home</li>

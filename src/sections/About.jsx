@@ -5,7 +5,7 @@ import '../styles/About.css';
 const About = () => {
   return (
     <div className='about' id='About'>
-      <div className='leftAbout'>
+      <div className='left-about'>
         <span>About Me</span>
         <span>
           Hi, I'm Wilbert. An undergraduate IT student, currently participating
@@ -24,7 +24,7 @@ const About = () => {
           or <button className='contact'>Contact Me</button>
         </span>
       </div>
-      <div className='rightAbout'>
+      <div className='right-about'>
         <div className='skills'>
           <div className='container'>
             <div className='bar html'>

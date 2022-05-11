@@ -9,7 +9,7 @@ import Webdev from '../assets/webdev.png';
 const Home = () => {
   return (
     <div className='home' id='Home'>
-      <div className='leftHome'>
+      <div className='left-home'>
         <div className='welcome'>
           <span>Welcome to</span>
           <span>Wilbert Chen's Portfolio</span>
@@ -34,9 +34,9 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <div className='rightHome'>
+      <div className='right-home'>
         <img src={Profile} alt='Profile' />
-        <div className='floatingCard'>
+        <div className='floating-card'>
           <img src={Webdev} alt='' />
           <span>
             Front-End
