@@ -290,6 +290,7 @@
 
 @media screen and (max-width: 360px) {
   .home {
+    padding-top: 8rem;
     height: 45rem;
   }
 
@@ -313,6 +314,10 @@
     transform: scale(0.25);
     left: -120%;
     bottom: -50%;
+  }
+
+  .right-home > img:hover {
+    transform: scale(0.3);
   }
 
   .floating-card {
