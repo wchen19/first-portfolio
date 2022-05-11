@@ -2,6 +2,7 @@
   display: flex;
   height: 25vh;
   background: var(--blue);
+  text-align: center;
   align-items: center;
   justify-content: center;
   color: white;
@@ -12,5 +13,12 @@
 @media screen and (max-width: 600px) {
   .footer {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .footer {
+    height: 20vh;
+    font-size: 1.2rem;
   }
 }

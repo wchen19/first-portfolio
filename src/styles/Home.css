@@ -263,6 +263,7 @@
     padding: 5px 15px;
     gap: 1rem;
     bottom: 50%;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
   }
 
   .floating-card > img {
@@ -283,6 +284,61 @@
     width: 7rem;
     height: 5rem;
     top: -10%;
+    right: 60%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .home {
+    height: 45rem;
+  }
+
+  .welcome > :nth-child(1) {
+    font-size: 2.5rem;
+  }
+
+  .welcome > :nth-child(2) {
+    font-size: 1.5rem;
+  }
+
+  .icons {
+    margin-top: 3rem;
+  }
+
+  .icons svg {
+    font-size: 2.5rem;
+  }
+
+  .right-home > img {
+    transform: scale(0.25);
+    left: -120%;
+    bottom: -50%;
+  }
+
+  .floating-card {
+    padding: 3px 10px;
+    gap: 0.5rem;
+    bottom: 65%;
+  }
+
+  .floating-card > img {
+    width: 3.5rem;
+  }
+
+  .floating-card > span {
+    font-size: 14px;
+  }
+
+  .blur1 {
+    width: 10rem;
+    height: 5rem;
+    bottom: 60%;
+  }
+
+  .blur2 {
+    width: 5rem;
+    height: 5rem;
+    top: -25%;
     right: 60%;
   }
 }
